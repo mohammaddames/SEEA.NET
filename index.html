@@ -9,58 +9,21 @@
       font-family: 'Tahoma', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.8;
       background: #f4f4f4;
       color: #333;
-    }
-    header {
-      background-color: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-    header p {
-      margin: 5px 0 0;
+      line-height: 1.8;
     }
     section {
-      padding: 20px;
-      margin: 10px auto;
-      max-width: 900px;
       background: white;
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 700px;
       border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     h2 {
       color: #2e7d32;
       margin-top: 0;
-    }
-    ul {
-      padding-right: 20px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      padding: 10px;
-      margin-top: 20px;
-    }
-    a {
-      color: #2e7d32;
-      text-decoration: none;
-    }
-    #lang-toggle {
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      background-color: #2e7d32;
-      color: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 5px;
-      cursor: pointer;
     }
     .social-cards {
       display: flex;
@@ -73,7 +36,7 @@
       background-color: #fff;
       border: 1px solid #ccc;
       border-radius: 6px;
-      width: 140px;
+      width: 120px;
       text-align: center;
       padding: 10px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -82,65 +45,31 @@
     .social-card:hover {
       transform: scale(1.05);
     }
+    a {
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <button id="lang-toggle">English</button>
-  <header>
-    <h1 id="title">جمعية خبراء الطاقة السوريين (SEEA)</h1>
-    <p id="subtitle">🌱 طاقة نظيفة لمستقبل أكثر إشراقًا</p>
-  </header>
-
   <section>
-    <h2 id="about-title">من نحن</h2>
-    <p id="about-text">
-      نحن مجموعة من المهندسين السوريين ذوي الخبرة في قطاعات الطاقة الأحفورية والطاقة المتجددة،
-      نسعى لتطوير قطاع الطاقة في سوريا من خلال التعاون، الابتكار، والممارسات المستدامة.
-    </p>
+    <h2>شعارنا</h2>
+    <p>من مواردنا... نبني استدامتنا</p>
   </section>
 
   <section>
-    <h2 id="vision-title">رؤيتنا</h2>
-    <p id="vision-text">رفع مكانة سوريا لتكون بين الدول الرائدة عالميًا في مجال الطاقة عبر تحقيق أمن طاقة محلي مستدام.</p>
-    <h2 id="mission-title">رسالتنا</h2>
-    <p id="mission-text">تطوير حلول طاقة مبتكرة باستخدام الموارد الطبيعية والمتجددة لتحقيق تنمية مجتمعية فاعلة.</p>
+    <h2>رؤيتنا</h2>
+    <p>تحقيق أمن الطاقة المحلي ورفع مكانة سوريا إلى مصاف الدول المتقدمة عالمياً في مجال الطاقة والاستدامة.</p>
   </section>
 
   <section>
-    <h2 id="goals-title">أهدافنا</h2>
-    <ul id="goals-list">
-      <li>تعزيز التعاون والترابط وتبادل الخبرات بين الخبراء السوريين داخل وخارج سوريا.</li>
-      <li>تقديم برامج تدريبية لرفع كفاءة الكوادر السورية في قطاع الطاقة.</li>
-      <li>تقديم الاستشارات الهندسية والدعم الفني لتعزيز قطاع الطاقة.</li>
-      <li>تنفيذ مشاريع تنموية بالتعاون مع جهات محلية ودولية مع التركيز على الحلول الإغاثية.</li>
-      <li>تشجيع الابتكار وعقد المؤتمرات لدعم الأفكار الجديدة.</li>
-      <li>تمكين كل شرائح المجتمع بما في ذلك المرأة للمشاركة في إعادة الإعمار.</li>
-    </ul>
+    <h2>رسالتنا</h2>
+    <p>تطوير حلول طاقة مبتكرة ومستدامة باستخدام الموارد الطبيعية والمتجددة المحلية وتحقيق تنمية فاعلة في المجتمع السوري.</p>
   </section>
 
   <section>
-    <h2 id="achievements-title">إنجازاتنا</h2>
-    <ul id="achievements-list">
-      <li>إعداد خارطة طريق لجذب استثمارات في الطاقات المتجددة.</li>
-      <li>تنفيذ مشروع طاقة شمسية لمسجد في حزما بالغوطة الشرقية.</li>
-      <li>تدريب كوادر وزارة الكهرباء ونقابة المهندسين على برنامج GIS.</li>
-      <li>تحضير حقيبة تدريبية لموظفي وزارة الكهرباء حول مشاريع الطاقة المتجددة.</li>
-      <li>مراجعة طلبات مشاريع طاقة شمسية بقدرة 100 ميجاواط.</li>
-      <li>تشغيل بئر ماء في العتيبة باستخدام الطاقة الشمسية.</li>
-      <li>تشبيك أكثر من 70 خبيرًا سوريًا داخل وخارج سوريا.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2 id="team-title">فريقنا</h2>
-    <p id="team-text">
-      يتألف من أكثر من 70 مهندسًا ومهندسة من خبراء متطوعين في قطاع الطاقة المتجددة في مختلف دول العالم،
-      حاصلين على درجات علمية عالية من جامعات مرموقة، ويعملون بروح التعاون والخبرة لتطوير قطاع الطاقة في سوريا.
-    </p>
-  </section>
-
-  <section>
-    <h2 id="contact-title">تواصل معنا</h2>
+    <h2>تواصل معنا</h2>
     <div class="social-cards">
       <div class="social-card"><a href="https://www.linkedin.com/company/syrian-energy-experts-alliance" target="_blank">LinkedIn</a></div>
       <div class="social-card"><a href="https://www.facebook.com/share/1AfvLbz578" target="_blank">Facebook</a></div>
@@ -150,91 +79,5 @@
       <div class="social-card"><a href="https://x.com/SEEA2024" target="_blank">X (Twitter)</a></div>
     </div>
   </section>
-
-  <footer id="footer">
-    &copy; 2025 جمعية خبراء الطاقة السوريين (SEEA). جميع الحقوق محفوظة.
-  </footer>
-
-  <script>
-    const toggleBtn = document.getElementById('lang-toggle');
-    let isArabic = true;
-
-    toggleBtn.addEventListener('click', () => {
-      if (isArabic) {
-        document.documentElement.lang = "en";
-        document.documentElement.dir = "ltr";
-        toggleBtn.textContent = "العربية";
-
-        document.getElementById('title').textContent = "Syrian Energy Experts Association (SEEA)";
-        document.getElementById('subtitle').textContent = "🌱 Clean Energy for a Brighter Future";
-        document.getElementById('about-title').textContent = "About Us";
-        document.getElementById('about-text').textContent = "We are a group of Syrian engineers with experience in fossil and renewable energy sectors, working to develop Syria’s energy sector through collaboration, innovation, and sustainable practices.";
-        document.getElementById('vision-title').textContent = "Our Vision";
-        document.getElementById('vision-text').textContent = "To position Syria among the world’s leading countries in energy by achieving sustainable local energy security.";
-        document.getElementById('mission-title').textContent = "Our Mission";
-        document.getElementById('mission-text').textContent = "Developing innovative and sustainable energy solutions using local natural and renewable resources for effective community development.";
-        document.getElementById('goals-title').textContent = "Our Goals";
-        document.getElementById('goals-list').innerHTML = `
-          <li>Enhancing cooperation and knowledge exchange among Syrian experts worldwide.</li>
-          <li>Providing training programs to raise the efficiency of Syrian energy professionals.</li>
-          <li>Offering engineering consultancy and technical support to boost the energy sector.</li>
-          <li>Implementing development projects in cooperation with local and international entities, focusing on relief solutions.</li>
-          <li>Encouraging innovation and organizing conferences to support new ideas.</li>
-          <li>Empowering all segments of society, including women, to participate in reconstruction.</li>
-        `;
-        document.getElementById('achievements-title').textContent = "Our Achievements";
-        document.getElementById('achievements-list').innerHTML = `
-          <li>Prepared a roadmap study to attract investment in renewable energy.</li>
-          <li>Implemented a solar energy project for a mosque in Hazma, Eastern Ghouta.</li>
-          <li>Trained Ministry of Electricity staff and Engineers Syndicate in Damascus on GIS.</li>
-          <li>Prepared training materials for Ministry of Electricity staff on renewable energy projects.</li>
-          <li>Reviewed applications for solar energy projects with 100 MW capacity.</li>
-          <li>Operated a water well in Otaiba using solar power.</li>
-          <li>Connected over 70 Syrian experts inside and outside Syria.</li>
-        `;
-        document.getElementById('team-title').textContent = "Our Team";
-        document.getElementById('team-text').textContent = "Comprises over 70 volunteer experts in renewable energy from various countries, holding advanced degrees from prestigious universities, working collaboratively to develop Syria’s energy sector.";
-        document.getElementById('contact-title').textContent = "Contact Us";
-        document.getElementById('footer').innerHTML = "&copy; 2025 Syrian Energy Experts Association (SEEA). All rights reserved.";
-      } else {
-        document.documentElement.lang = "ar";
-        document.documentElement.dir = "rtl";
-        toggleBtn.textContent = "English";
-
-        document.getElementById('title').textContent = "جمعية خبراء الطاقة السوريين (SEEA)";
-        document.getElementById('subtitle').textContent = "🌱 طاقة نظيفة لمستقبل أكثر إشراقًا";
-        document.getElementById('about-title').textContent = "من نحن";
-        document.getElementById('about-text').textContent = "نحن مجموعة من المهندسين السوريين ذوي الخبرة في قطاعات الطاقة الأحفورية والطاقة المتجددة، نسعى لتطوير قطاع الطاقة في سوريا من خلال التعاون، الابتكار، والممارسات المستدامة.";
-        document.getElementById('vision-title').textContent = "رؤيتنا";
-        document.getElementById('vision-text').textContent = "رفع مكانة سوريا لتكون بين الدول الرائدة عالميًا في مجال الطاقة عبر تحقيق أمن طاقة محلي مستدام.";
-        document.getElementById('mission-title').textContent = "رسالتنا";
-        document.getElementById('mission-text').textContent = "تطوير حلول طاقة مبتكرة باستخدام الموارد الطبيعية والمتجددة لتحقيق تنمية مجتمعية فاعلة.";
-        document.getElementById('goals-title').textContent = "أهدافنا";
-        document.getElementById('goals-list').innerHTML = `
-          <li>تعزيز التعاون والترابط وتبادل الخبرات بين الخبراء السوريين داخل وخارج سوريا.</li>
-          <li>تقديم برامج تدريبية لرفع كفاءة الكوادر السورية في قطاع الطاقة.</li>
-          <li>تقديم الاستشارات الهندسية والدعم الفني لتعزيز قطاع الطاقة.</li>
-          <li>تنفيذ مشاريع تنموية بالتعاون مع جهات محلية ودولية مع التركيز على الحلول الإغاثية.</li>
-          <li>تشجيع الابتكار وعقد المؤتمرات لدعم الأفكار الجديدة.</li>
-          <li>تمكين كل شرائح المجتمع بما في ذلك المرأة للمشاركة في إعادة الإعمار.</li>
-        `;
-        document.getElementById('achievements-title').textContent = "إنجازاتنا";
-        document.getElementById('achievements-list').innerHTML = `
-          <li>إعداد خارطة طريق لجذب استثمارات في الطاقات المتجددة.</li>
-          <li>تنفيذ مشروع طاقة شمسية لمسجد في حزما بالغوطة الشرقية.</li>
-          <li>تدريب كوادر وزارة الكهرباء ونقابة المهندسين على برنامج GIS.</li>
-          <li>تحضير حقيبة تدريبية لموظفي وزارة الكهرباء حول مشاريع الطاقة المتجددة.</li>
-          <li>مراجعة طلبات مشاريع طاقة شمسية بقدرة 100 ميجاواط.</li>
-          <li>تشغيل بئر ماء في العتيبة باستخدام الطاقة الشمسية.</li>
-          <li>تشبيك أكثر من 70 خبيرًا سوريًا داخل وخارج سوريا.</li>
-        `;
-        document.getElementById('team-title').textContent = "فريقنا";
-        document.getElementById('team-text').textContent = "يتألف من أكثر من 70 مهندسًا ومهندسة من خبراء متطوعين في قطاع الطاقة المتجددة في مختلف دول العالم، حاصلين على درجات علمية عالية من جامعات مرموقة، ويعملون بروح التعاون والخبرة لتطوير قطاع الطاقة في سوريا.";
-        document.getElementById('contact-title').textContent = "تواصل معنا";
-        document.getElementById('footer').innerHTML = "&copy; 2025 جمعية خبراء الطاقة السوريين (SEEA). جميع الحقوق محفوظة.";
-      }
-      isArabic = !isArabic;
-    });
-  </script>
 </body>
 </html>
